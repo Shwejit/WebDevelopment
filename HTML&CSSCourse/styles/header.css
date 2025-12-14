@@ -1,0 +1,119 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+    z-index: 100;
+}
+.left-section{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.Menu-Left{
+    height: 25px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.Youtube_symbol{
+    height: 40px;
+}
+.youtube-text{
+    color: black;
+}
+.middle-section{
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 35px;
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    height: 21px;
+    padding: 6.5px;
+    margin-left: -2px;
+    border-radius: 2px;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgb(150, 150, 150);
+    
+}
+.mic{
+    height: 32px;
+    width: 302x;
+    padding: 0px;
+    margin-left: 10px;
+}
+.search-bar{
+    flex:1;
+    height: 32px;
+    font-size: 16px;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 2px;
+    box-shadow:inset 1px 1px 5px rgba(0,0,0,0.05);
+    width: 0.1px;
+}
+.searchbar-button{
+    position: relative;
+}
+.searchbar-button .tooltip{
+    position: absolute;
+    border-radius: 2px;
+    padding: 4px;
+    background-color: rgb(198, 197, 197);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+.searchbar-button:hover .tooltip{
+    opacity: 1;
+}
+
+
+.search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    padding-left: 12px;
+}
+.right-section{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.upload{
+    width: 30px;
+}
+.youtubeapps{
+    width: 20px;
+}
+.notification{
+    width: 25px;
+}
+.notification-header{
+    position: relative;
+}
+.notification-count{
+    position: absolute;
+    background-color: red;
+    border-radius:  10px;
+    top: -3px;
+    right: -2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 12px;
+    font-family: Roboto,Arial;
+    color: white;
+}

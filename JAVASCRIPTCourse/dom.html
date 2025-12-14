@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model(DOM)</title>
+</head>
+<body>
+    <button>
+        Hello
+    </button>
+    <button class="second">
+        Second Button
+    </button>
+    <script>
+
+        //HTML elements are javascript objects.
+        //Objects are values that we can save inside a variable
+        //DOM is a built-in object called document object
+        //DOM combines HTML and Js together. It gives javascript full control of the webpage.
+        document.querySelector('button').innerHTML='Changed';
+        console.log(document.querySelector('button').innerHTML);
+        console.log(document.querySelector('.second').innerHTML);
+
+        //document.body.innerHTML="Hello";//built in document object
+    </script>
+</body>
+</html>

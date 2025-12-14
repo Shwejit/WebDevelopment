@@ -1,0 +1,79 @@
+
+    .subscribe-button{
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border:none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: opacity 0.15s;
+        vertical-align: top;
+    }
+    .join-button{
+        background-color: white;
+        border-color: #0d76ffb4;
+        border-width: 1px;
+        color: #0d76ffb4;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right:9px;
+        padding-top: 9px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: background-color 0.18s, color 0.18sx;
+    }
+    .tweet-button{
+        background-color: rgb(19, 157, 255);
+        color: white;
+        border-radius: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: none;
+        width:70px;
+        font-size: 15px;
+        cursor:pointer;  
+        transition: box-shadow 0.15s;     
+    }
+    .subscribe-button:hover{
+        opacity: 0.8;
+    }
+    .subscribe-button:active{
+        opacity: 0.4;
+    }
+    .join-button:hover{
+        background-color:#0d76ffb4 ;
+        color: white;
+    }
+    .join-button:active{
+        opacity: 0.7;
+    }
+    .tweet-button:hover{
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    }
+    .stretch{
+        background-color: rgba(1, 171, 21, 0.744);
+        border: none;
+        color: white;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: padding 0.8s;
+        margin-top: 20px;
+        font-family: Montserrat;
+    }
+    .stretch:hover{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+        cursor: pointer;
+    }

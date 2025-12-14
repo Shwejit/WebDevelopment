@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON-Javascript</title>
+</head>
+<body>
+    <script>
+        //javascript object
+        const program = {
+            score: 'good',
+            money : 40,
+            fun : function fly(){
+                console.log("Hi");
+            }
+        }
+
+        console.log(program.score);
+        console.log(program['money']);
+        program.fun();
+
+        //JSON does not support function
+        //Javascript to JSON/string convertion
+        console.log(JSON.stringify(program));
+        console.log(typeof JSON.stringify(program));
+
+        //JSONto Javascript convertion
+        console.log(JSON.parse(JSON.stringify(program)));
+
+        //Auto-Boxing
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());
+
+        //Object by references
+
+        const obj1={
+            name: 'abc'
+        };
+
+        const obj2=obj1;//copies the reference of object
+
+        obj1.name = 'hello';
+        console.log(obj1);
+        console.log(obj2);
+
+        const obj3={
+            name: 'hello'
+        };
+
+        console.log(obj1===obj3);//compares the reference(address) and not the values
+        console.log(obj1===obj2);//compares the reference(address) and not the values
+
+
+        //Destructuring : An easir way to take properties out of the object
+        const obj4={
+            message: "hi",
+            price: 32
+        };
+
+        const { message , price } = obj4;
+        console.log(message);
+        console.log(price);
+
+        //Shortand property
+        const ovj5={
+            message
+        };
+        console.log(obj4);
+
+        //Shorthand method
+
+        const fun={
+            mes(){
+                console.log("Shorthand Function");
+            }
+        };
+
+        fun.mes();
+    </script>
+</body>
+</html>

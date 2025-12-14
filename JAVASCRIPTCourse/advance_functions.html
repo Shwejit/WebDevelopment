@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Functions</title>
+</head>
+<body>
+    <script>
+
+        ////Anonymous function means function with no name
+        /////FUNCTIONS ARE VALUES/////
+        greetings();
+        function greetings(){
+            console.log("Hello");
+        }
+        /////////////////////////Function inside a variable
+
+        const v = function(){
+            console.log("Hello2");
+        };
+ 
+        console.log(v);
+        v();
+        /////////////////////////Function inside an object
+        const obj={
+            p : 2,
+            q : function(){
+                console.log("Hello3");
+            }
+        };
+        obj.q();
+        //////////////////////////Passing a function into another function
+
+        function cute(param){
+            param();
+        }
+        cute(function(){//callback function
+            console.log("Hello4");
+        });
+        ///////////////setTimeout()[builtIn funct] function used to run a function after a certain amount of time(in ms)
+        setTimeout(function(){
+        }, 2000);
+        console.log("Next line");
+        //asynchronous code-> computer won't wait to finish present line of code rather till the wait time it will run the next lines of code so it first print "Next line" then this timeout function
+        //synchronous code-> waits for the current line of code to finish then goes to the next line( all  code normally are synchronous code, except the setTimeout ans setInterval code)
+
+        setInterval(function(){
+            console.log("Interval");
+        },3000);//it will run the function in every 3 sec or 3000 millisecond
+        console.log("Next Line after Interval code");
+    </script>
+</body>
+</html>

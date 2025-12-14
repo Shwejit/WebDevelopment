@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Example</title>
+    <style>
+      .box {
+        border: 1px solid lightgray;
+        box-shadow: 0 0 5px grey;
+        margin: 5px;
+        width: 400px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      .headingtext {
+        color: rgb(154, 154, 154);
+        font-size: 15px;
+        font-family: Roboto, Arial;
+      }
+      .detailsrow {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        align-items: center;
+      }
+      .profile {
+        margin-right: 25px;
+      }
+      .profileimage {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+      }
+      .profiledetails {
+        flex: 1;
+      }
+      .firstrow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .firstrowText {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .firstrowDate {
+        font-size: 14px;
+        color: rgb(120, 120, 120);
+      }
+      .secondrow {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .thirdrow {
+        color: rgb(120, 120, 120);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="headingtext">ALL INBOXES</div>
+
+      <div class="detailsrow">
+        <div class="profile">
+          <img class="profileimage" src="HeaderImages/profile (1).png" />
+        </div>
+        <div class="profiledetails">
+          <div class="firstrow">
+            <div class="firstrowText">Chewy Promotions</div>
+            <div class="firstrowDate">4:58 PM</div>
+          </div>
+          <div class="secondrow">Biggest Sales of the year</div>
+          <div class="thirdrow">
+            Hey there! We're writing to tell you about our...
+          </div>
+        </div>
+      </div>
+
+      <div class="detailsrow">
+        <div class="profile">
+          <img class="profileimage" src="HeaderImages/profile (1).png" />
+        </div>
+        <div class="profiledetails">
+          <div class="firstrow">
+            <div class="firstrowText">Chewy Promotions</div>
+            <div class="firstrowDate">4:58 PM</div>
+          </div>
+          <div class="secondrow">Biggest Sales of the year</div>
+          <div class="thirdrow">
+            Hey there! We're writing to tell you about our...
+          </div>
+        </div>
+      </div>
+
+      <div class="detailsrow">
+        <div class="profile">
+          <img class="profileimage" src="HeaderImages/profile (1).png" />
+        </div>
+        <div class="profiledetails">
+          <div class="firstrow">
+            <div class="firstrowText">Chewy Promotions</div>
+            <div class="firstrowDate">4:58 PM</div>
+          </div>
+          <div class="secondrow">Biggest Sales of the year</div>
+          <div class="thirdrow">
+            Hey there! We're writing to tell you about our...
+          </div>
+        </div>
+      </div>
+        
+    </div>
+  </body>
+</html>
